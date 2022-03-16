@@ -1,0 +1,109 @@
+Git Client fatal error 
+
+git config --global http.sslverify true
+git config --global http.sslCAPath /etc/pki/tls/certs
+
+
+Git lab migrating svn to gitlab
+
+https://subgit.com/book.html
+
+git lab runsvdir service not runnig when we did git-ctl reconfigure or git
+
+Sol:
+
+sudo systemctl restart gitlab-runsvdir
+sudo
+gitlab-ctl restart
+
+
+ERROR gitlab-ctl reconfigure:
+
+bash[migrate gitlab-rails database] (gitlab::database_migrations line 49) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '137'
+---- Begin output of "bash"  "/tmp/chef-script20180509-5785-1ktz3ow" ----
+STDOUT:
+
+Sol:
+
+The bash exit code 137 indicates it received a KILL signal. Check dmesg output, or system logs, you may have ran out of memory.
+
+
+
+To clone particular branch '
+
+ git clone -b br1 --single-branch  http://gitlab.violamoney.com/root/test-php-jk
+
+To see USER name and email credintials:
+
+$ git config user.email
+
+#  git config user.name
+
+To Configure:
+
+$ git config --global user.email "admin@example.com" 
+
+$ git config --global user.name "Administrator" 
+
+TO SEE Tags:
+
+$ git tag
+$ git show
+
+To clone particular tag:
+
+$ git clone --branch v2 http://gitlab.violamoney.com/root/test-php-jk
+
+
+Error:
+
+$ git clone http://gitlab.violamoney.com/basantkumar.sharma/Viola-Pay.git
+Cloning into 'Viola-Pay'...
+remote: HTTP Basic: Access denied
+fatal: Authentication failed for 'http://gitlab.violamoney.com/basantkumar.sharm          a/Viola-Pay.git/'
+
+Slo:
+
+ # git config --system --unset credential.helper
+
+or 
+go to windows control panel >> go to credential manager >> edit or remove credentials
+
+
+
+Git branching:
+
+git pull origin master 
+
+>> for pulling only master banch it will update code in master branch
+
+git pull
+
+>> it will pull all the branches and update all braches
+
+Showing all branches:
+
+  git show branch --all   
+
+
+see curent branch:
+
+  git show-branch --curent
+  git show-branch --list
+
+see remote branch :
+
+  git show-branch --r
+
+
+
+
+
+
+
+
+
+
+
+
+
