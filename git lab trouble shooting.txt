@@ -2,7 +2,7 @@ Git Client fatal error
 
 git config --global http.sslverify true
 git config --global http.sslCAPath /etc/pki/tls/certs
-
+add new features
 
 Git lab migrating svn to gitlab
 
