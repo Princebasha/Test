@@ -11,7 +11,7 @@ https://subgit.com/book.html
 git lab runsvdir service not runnig when we did git-ctl reconfigure or git
 
 Sol:
-
+SASNJSIDJIFJFJVJDSVNJVDVDV
 sudo systemctl restart gitlab-runsvdir
 sudo
 gitlab-ctl restart
